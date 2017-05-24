@@ -18,10 +18,8 @@
 #
 
 lib = File.expand_path('../../libraries', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+$:.unshift(lib) unless $:.include?(lib)
 
-require 'rspec/expectations'
 require 'chefspec'
-
 require 'rightscale_tag_helper'
 require 'machine_tag'

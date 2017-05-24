@@ -26,12 +26,11 @@ Github Repository: [https://github.com/rightscale-cookbooks/rightscale_tag](http
 
 # Requirements
 
-* Requires Chef 12
-* Requires Ruby 2.3.1
-* Requires [RightLink 10](http://docs.rightscale.com/rl10/) See cookbook version 1.0.6 for RightLink 6 support
+* Requires Chef 11 or higher
+* Requires Ruby 1.9 or higher
 * Platform
-  * Ubuntu 12.04, 14.04
-  * CentOS 6, 7
+  * Ubuntu 12.04
+  * CentOS 6
 * Cookbooks
   * [machine_tag]
   * [marker]
@@ -388,7 +387,7 @@ type. To use them in a recipe add the following:
 
 ```ruby
 class Chef::Recipe
-  include Rightscale::RightscaleTag
+  include RightScale::RightScaleTag
 end
 ```
 
